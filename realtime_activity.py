@@ -115,11 +115,15 @@ def main():
         label_val = argmax(summed)
 
         if label_val == 0:
-            state="running"
+            state="Driving"
         elif label_val == 1:
-            state="sitting"
+            state="Running"
         elif label_val == 2:
-            state="walking"
+            state="Sitting"
+        elif label_val == 3:
+            state="Smoking"
+        elif label_val == 4:
+            state="Walking"
         else:
             state="unknown"
             
